@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <div class="keys">
       <div
         v-for="item in items"
@@ -14,12 +13,10 @@
         <audio :src="item.audio" :data-key="item.keycode"></audio>
       </div>
     </div>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 // :class="[item.isPlaying ? 'playing': '', 'key']"
 
 export default {
@@ -32,64 +29,64 @@ export default {
           keycode: '65',
           alphabet: 'a',
           mode: 'clap',
-          isPlaying: false,
-          audio: '/sounds/clap.wav'
+          // isPlaying: false,
+          audio: '../sounds/clap.wav'
         },
         {
           keycode: '83',
           alphabet: 's',
           mode: 'hihat',
-          isPlaying: false,
-          audio: '/sounds/hihat.wav'
+          // isPlaying: false,
+          audio: '../sounds/hihat.wav'
         },
         {
           keycode: '68',
           alphabet: 'd',
           mode: 'kick',
-          isPlaying: false,
-          audio: '/sounds/kick.wav'
+          // isPlaying: false,
+          audio: '../sounds/kick.wav'
         },
         {
           keycode: '70',
           alphabet: 'f',
           mode: 'openhat',
-          isPlaying: false,
-          audio: '/sounds/openhat.wav'
+          // isPlaying: false,
+          audio: '../sounds/openhat.wav'
         },
         {
           keycode: '71',
           alphabet: 'g',
           mode: 'boom',
-          isPlaying: false,
-          audio: '/sounds/boom.wav'
+          // isPlaying: false,
+          audio: '../sounds/boom.wav'
         },
         {
           keycode: '72',
           alphabet: 'h',
           mode: 'ride',
-          isPlaying: false,
-          audio: '/sounds/ride.wav'
+          // isPlaying: false,
+          audio: '../sounds/ride.wav'
         },
         {
           keycode: '74',
           alphabet: 'j',
           mode: 'snare',
-          isPlaying: false,
-          audio: '/sounds/snare.wav'
+          // isPlaying: false,
+          audio: '../sounds/snare.wav'
         },
         {
           keycode: '75',
           alphabet: 'k',
           mode: 'tom',
-          isPlaying: false,
-          audio: '/sounds/tom.wav'
+          // isPlaying: false,
+          audio: '../sounds/tom.wav'
         },
         {
           keycode: '76',
           alphabet: 'l',
           mode: 'tink',
-          isPlaying: false,
-          audio: '/sounds/tink.wav'
+          // isPlaying: false,
+          audio: '../sounds/tink.wav'
         }
       ]
     }
@@ -118,22 +115,10 @@ export default {
   mounted: function () {
     window.addEventListener('keydown', this.addSound)
   }
-  // components: {
-  //   HelloWorld
-  // }
 }
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
-
 html {
   font-size: 10px;
   background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;

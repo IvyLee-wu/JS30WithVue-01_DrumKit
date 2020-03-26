@@ -2,6 +2,7 @@
   "name": "js30withvue-01_drumkits",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/JS30WithVue-01_DrumKit/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
