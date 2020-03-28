@@ -105,11 +105,6 @@ export default {
       if (e.propertyName !== 'transform') return
       e.target.classList.remove('playing')
       // console.log(e)
-    },
-    add () {
-      this.counter++
-      const audio = new Audio('tom.mp3')
-      audio.play()
     }
   },
   mounted: function () {
